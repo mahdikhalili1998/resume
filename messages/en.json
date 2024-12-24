@@ -1,5 +1,11 @@
 {
   "homepage": {
     "hello": "hi man this is test"
+  },
+  "header": {
+    "im": "I'm",
+    "name": "Mahdi Khalili",
+    "front": "Frontend Developer",
+    "next": "Next.js Developer"
   }
 }

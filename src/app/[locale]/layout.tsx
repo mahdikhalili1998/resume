@@ -22,7 +22,9 @@ const RootLayout: React.FC<LayoutProps> = async ({ children, params }) => {
       <body className={`antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {" "}
-          <Layout>{children}</Layout>
+          <Layout locale={JSON.parse(JSON.stringify(locale))}>
+            {children}
+          </Layout>
         </NextIntlClientProvider>
       </body>
     </html>
