@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-profilePicDown {
+  animation: profilePic 1s ease-out;
+}
+@keyframes profilePic {
+  from {
+    transform: translateY(-140px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-languageIconDown {
+  animation: languageIcon 1s ease-out;
+}
+@keyframes languageIcon {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-moveLeft {
+  animation: moveLeft 2s infinite;
+}
+@keyframes moveLeft {
+  from {
+    transform: translatex(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(-4px);
+    opacity: 1;
+  }
+}
+
+.animate-moveLeftOnce {
+  animation: moveLeft 2s ease-out;
+}
+@keyframes moveLeft {
+  from {
+    transform: translatex(5px);
+    opacity: 0;
+  }
+  to {
+    transform: translatex(-4px);
+    opacity: 1;
+  }
+}
