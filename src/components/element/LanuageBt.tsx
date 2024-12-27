@@ -28,7 +28,7 @@ function LanuageBt({ locale }: ILocale) {
         >
           <Image
             src={`/image/${locale}.png`}
-            onClick={(e) => changeLanguageHandler(locale)}
+            onClick={() => changeLanguageHandler(locale)}
             alt="usa-logo"
             width={80}
             height={80}
@@ -37,9 +37,7 @@ function LanuageBt({ locale }: ILocale) {
           />
           <Image
             src={`/image/${locale === "fa" ? "en" : "fa"}.png`}
-            onClick={(e) =>
-              changeLanguageHandler(locale === "fa" ? "en" : "fa")
-            }
+            onClick={() => changeLanguageHandler(locale === "fa" ? "en" : "fa")}
             alt="usa-logo"
             width={80}
             height={80}
@@ -49,7 +47,7 @@ function LanuageBt({ locale }: ILocale) {
         </div>
       ) : (
         <div
-          onClick={(e) => openModalHandler()}
+          onClick={openModalHandler}
           className={`${openModal ? "gap-2 px-3" : "px-1"} flex items-center rounded-3xl bg-slate-300 p-2 shadow-lg shadow-slate-500`}
         >
           <BsChevronCompactLeft className="animate-moveLeft mt-[2px] text-3xl font-semibold" />

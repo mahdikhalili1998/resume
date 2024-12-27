@@ -3,7 +3,6 @@ import { ILocale } from "@/types/props";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import { GiPolarStar } from "react-icons/gi";
 
 function TextDemo({ locale }: ILocale) {
   const el = useRef(null);
