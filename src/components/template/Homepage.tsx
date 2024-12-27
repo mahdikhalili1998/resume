@@ -8,6 +8,7 @@ function Homepage({ locale }: ILocale) {
   return (
     <div className="my-14 px-3">
       <Bio locale={JSON.parse(JSON.stringify(locale))} />
+     
     </div>
   );
 }

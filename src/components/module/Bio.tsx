@@ -6,12 +6,16 @@ import { useTranslations } from "next-intl";
 import { ILocale } from "@/types/props";
 import { GiPolarStar } from "react-icons/gi";
 import BioText from "../element/BioText";
+import dynamic from "next/dynamic";
+import code from "@/lottie/code.json";
 
 const customStyle = {
   backgroundColor: "transparent", // رنگ پس‌زمینه
 };
 
 export default function Bio({ locale }: ILocale) {
+  const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
+
   const userObject = {
     name: "Mahdi",
     lastName: "Khalili",
@@ -57,7 +61,13 @@ export default function Bio({ locale }: ILocale) {
           {JSON.stringify(userObject, null, 2)}
         </SyntaxHighlighter>
       </div>
-      <BioText locale={JSON.parse(JSON.stringify(locale))} />
+      <Lottie
+        animationData={code}
+        loop
+        play
+        style={{ width: 280, height: 280 }}
+      />
+      <BioText locale={locale} />
     </div>
   );
 }
