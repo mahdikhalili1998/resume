@@ -4,7 +4,7 @@ import Layout from "@/components/layout/Layout";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "@/fonts/vazirMatn/Vazirmatn-RD-font-face.css";
-import "@/fonts/iranSans/iranSansFontFace.css";
+// import "@/fonts/iranSans/iranSansFontFace.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
