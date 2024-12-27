@@ -50,3 +50,27 @@
 .ltr {
   direction: ltr;
 }
+
+.animate-down {
+  animation: Down 2s infinite;
+}
+@keyframes Down {
+  from {
+    transform: translatey(-6px);
+  }
+  to {
+    transform: translatey(5px);
+  }
+}
+
+.animate-up {
+  animation: Up 2s infinite;
+}
+@keyframes Up {
+  from {
+    transform: translatey(5px);
+  }
+  to {
+    transform: translatey(-6px);
+  }
+}

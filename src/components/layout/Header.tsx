@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import LanuageBt from "../element/LanuageBt";
-import TextDemo from "../element/TextDemo";
+import TextDemo from "../module/TextDemo";
 import { ILocale } from "@/types/props";
 
 function Header({ locale }: ILocale) {

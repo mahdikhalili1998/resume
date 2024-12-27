@@ -6,7 +6,7 @@ import { ILocale } from "@/types/props";
 function Homepage({ locale }: ILocale) {
   const t = useTranslations("homepage");
   return (
-    <div className="mt-10">
+    <div className="my-14 px-3">
       <Bio locale={JSON.parse(JSON.stringify(locale))} />
     </div>
   );

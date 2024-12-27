@@ -8,5 +8,9 @@
     "front": "Frontend Developer",
     "next": "Next.js Developer"
   },
-  "bio": { "title": "Little about me ..." }
+  "bio": {
+    "title": "Little about me ...",
+    "less": "show less",
+    "more": "show more"
+  }
 }
