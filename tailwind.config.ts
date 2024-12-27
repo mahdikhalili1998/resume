@@ -10,7 +10,7 @@ export default {
     extend: {
       fontFamily: {
         vazirMatn: ["Vazirmatn RD"],
-        iransans: ["IRANSansXFaNum"],
+        // iransans: ["IRANSansXFaNum"],
       },
       backgroundImage: {
         "code-pattern":

@@ -28,17 +28,17 @@ function TextDemo({ locale }: ILocale) {
       className={`${locale === "fa" ? "" : ""} mx-auto flex w-max items-center gap-2 rounded-lg bg-slate-200 px-3 py-2 shadow-lg shadow-slate-400`}
     >
       <h3
-        className={`${locale === "fa" ? "font-iransans" : "font-sans"} bg-code-pattern bg-clip-text bg-top text-2xl font-extrabold text-transparent`}
+        className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} bg-code-pattern bg-clip-text bg-top text-2xl font-extrabold text-transparent`}
       >
         {t("im")}
       </h3>
       <h3
-        className={`${locale === "fa" ? "font-iransans" : "mt-2 font-sans"} bg-code-pattern bg-clip-text bg-top font-medium text-transparent`}
+        className={`${locale === "fa" ? "font-vazirMatn" : "mt-2 font-sans"} bg-code-pattern bg-clip-text bg-top font-medium text-transparent`}
         ref={el}
       ></h3>
       {locale === "en" ? null : (
         <h3
-          className={`${locale === "fa" ? "font-iransans" : "font-sans"} bg-code-pattern bg-clip-text bg-top text-[25px] font-extrabold text-transparent`}
+          className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} bg-code-pattern bg-clip-text bg-top text-[25px] font-extrabold text-transparent`}
         >
           هستم
         </h3>

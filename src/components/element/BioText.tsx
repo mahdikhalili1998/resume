@@ -12,11 +12,13 @@ export default function BioText({ locale }: ILocale) {
   };
 
   return (
-    <div className="text-center">
+    <div
+      className={`${locale === "fa" ? "rtl font-vazirMatn" : "ltr font-sans"} text-center`}
+    >
       <p
         className={`overflow-hidden text-base text-slate-400 ${
           !showFullText ? "line-clamp-3" : ""
-        } ${locale === "fa" ? "rtl font-iransans" : "ltr font-sans"}`}
+        }`}
       >
         با سلام و احترام اینجانب مهدی خلیلی، 26 ساله، ساکن استان گیلان و شهرستان
         لاهیجان، دانشجوی رشته مهندسی کامپیوتر و فناوری اطلاعات، به شدت به دنیای

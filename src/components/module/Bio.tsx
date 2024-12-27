@@ -43,7 +43,7 @@ export default function Bio({ locale }: ILocale) {
   return (
     <div className="flex flex-col">
       <h1
-        className={`${locale === "fa" ? "rtl font-iransans text-right" : "ltr"} flex items-center gap-2 text-xl font-medium text-slate-400`}
+        className={`${locale === "fa" ? "rtl font-vazirMatn text-right" : "ltr"} flex items-center gap-2 text-xl font-medium text-slate-400`}
       >
         <GiPolarStar className="text-2xl text-cyan-500" />
         {t(`title`)}
