@@ -35,7 +35,7 @@
 }
 @keyframes moveLeft {
   from {
-    transform: translatex(5px);
+    transform: translatex(10px);
     opacity: 0;
   }
   to {
