@@ -2,6 +2,8 @@
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { useTranslations } from "next-intl";
+import { ILocale } from "@/types/props";
 
 const userObject = {
   name: "Ali Reza",
@@ -12,11 +14,30 @@ const userObject = {
   weight: 72,
 };
 
-export default function Bio() {
+const customStyle = {
+  backgroundColor: "transparent", // رنگ پس‌زمینه
+};
+
+export default function Bio({ locale }: ILocale) {
+  const t = useTranslations("bio");
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-5 text-white">
-      <div className="rounded-lg p-4 shadow-lg">
-        <SyntaxHighlighter language="javascript" style={tomorrow}>
+    <div className="flex flex-col items-center justify-center">
+      <h1
+        className={`${locale === "fa" ? "rtl font-vazirMatn" : "ltr"} text-white`}
+      >
+        {t(`title`)}
+      </h1>
+      <h1
+        className={`${locale === "fa" ? "rtl font-iransans" : "ltr"} text-white`}
+      >
+        {t(`title`)}
+      </h1>
+      <div>
+        <SyntaxHighlighter
+          language="javascript"
+          style={tomorrow}
+          customStyle={customStyle}
+        >
           {JSON.stringify(userObject, null, 2)}
         </SyntaxHighlighter>
       </div>

@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import Bio from "../module/Bio";
+import { ILocale } from "@/types/props";
 
-function Homepage() {
+function Homepage({ locale }: ILocale) {
   const t = useTranslations("homepage");
   return (
-    <div>
-      <Bio />
+    <div className="mt-10">
+      <Bio locale={JSON.parse(JSON.stringify(locale))} />
     </div>
   );
 }

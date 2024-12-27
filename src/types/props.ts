@@ -6,3 +6,7 @@ export interface ILayoutProps {
 export interface ILocale {
   locale: string;
 }
+
+export interface IParams {
+  params: ILocale;
+}

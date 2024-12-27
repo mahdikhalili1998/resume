@@ -1,10 +1,12 @@
 // src/app/page.tsx
 import Homepage from "@/components/template/Homepage";
+import { IParams } from "@/types/props";
 
-const Home = () => {
+const Home = async ({ params }: IParams) => {
+  const { locale } = await params;
   return (
     <div>
-      <Homepage />
+      <Homepage locale={locale} />
     </div>
   );
 };
