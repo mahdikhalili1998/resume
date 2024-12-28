@@ -17,5 +17,5 @@ export interface IWebLangData {
     title: string;
     detail: string[];
   };
-  locale: string;
+  locale?: string;
 }

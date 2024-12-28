@@ -3,12 +3,11 @@ import { IWebLangData } from "@/types/props";
 import React from "react";
 import dynamic from "next/dynamic";
 
-function WebLang({ item, locale }: IWebLangData) {
+function WebLang({ item }: IWebLangData) {
   const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
   return (
     <div>
       <div>
-        {" "}
         <Lottie
           animationData={item.animation}
           loop
