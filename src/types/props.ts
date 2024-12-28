@@ -10,3 +10,12 @@ export interface ILocale {
 export interface IParams {
   params: ILocale;
 }
+
+export interface IWebLangData {
+  item: {
+    animation: JSON;
+    title: string;
+    detail: string[];
+  };
+  locale: string;
+}

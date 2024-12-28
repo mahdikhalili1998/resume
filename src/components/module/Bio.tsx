@@ -7,6 +7,7 @@ import { ILocale } from "@/types/props";
 import { GiPolarStar } from "react-icons/gi";
 import BioText from "../element/BioText";
 import dynamic from "next/dynamic";
+// import code from "@/lottie/code.json";
 import code from "@/lottie/code.json";
 
 const customStyle = {
@@ -47,7 +48,7 @@ export default function Bio({ locale }: ILocale) {
   return (
     <div className="flex flex-col">
       <h1
-        className={`${locale === "fa" ? "rtl font-vazirMatn text-right" : "ltr"} flex items-center gap-2 text-xl font-medium text-slate-400`}
+        className={`${locale === "fa" ? "rtl text-right font-vazirMatn" : "ltr"} flex items-center gap-2 text-xl font-medium text-slate-400`}
       >
         <GiPolarStar className="text-2xl text-cyan-500" />
         {t(`title`)}
@@ -65,7 +66,7 @@ export default function Bio({ locale }: ILocale) {
         animationData={code}
         loop
         play
-        style={{ width: 280, height: 280 }}
+        style={{ width: 280, height: 280, margin: "auto" }}
       />
       <BioText locale={locale} />
     </div>
