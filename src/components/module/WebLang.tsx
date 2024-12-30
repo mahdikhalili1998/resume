@@ -7,8 +7,9 @@ import Image from "next/image";
 function WebLang({ item: { detail, logo, animation, title } }: IWebLangData) {
   const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
   return (
-    <div className="mt-10">
-      <div className="flex items-center">
+    <div className="mt-10 flex flex-col items-start">
+      <div className="flex items-center gap-3">
+        {" "}
         {animation && (
           <Lottie
             animationData={animation}
@@ -16,7 +17,7 @@ function WebLang({ item: { detail, logo, animation, title } }: IWebLangData) {
             play
             style={{
               width: 100,
-              height: 100,
+              height: 90,
             }}
           />
         )}
@@ -27,11 +28,18 @@ function WebLang({ item: { detail, logo, animation, title } }: IWebLangData) {
             width={200}
             height={200}
             priority
-            className={"h-auto w-[10rem]"}
+            className={`ml-3 h-auto w-[4rem] rounded-[100%] border-2 border-solid`}
           />
         )}
-        <h2 className="text-lg font-medium text-slate-400">{title}</h2>
+        <h1 className="glowing-text text-lg font-medium">{title}</h1>
       </div>
+      <ul className="ml-5 mt-5">
+        {detail.map((item, index) => (
+          <li className="font-medium text-slate-400" key={index}>
+            {item}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

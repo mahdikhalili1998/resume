@@ -74,3 +74,31 @@
     transform: translatey(-6px);
   }
 }
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #ccc,
+      0 0 15px #fff,
+      0 0 20px #ccc,
+      0 0 25px #fff,
+      0 0 30px #ccc;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #ccc,
+      0 0 30px #fff,
+      0 0 40px #ccc,
+      0 0 50px #fff,
+      0 0 60px #ccc;
+  }
+}
+
+.glowing-text {
+  animation: glow 2s infinite;
+  color: #fff;
+  font-weight: bold;
+}
