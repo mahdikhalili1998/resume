@@ -13,7 +13,7 @@ export interface IParams {
 
 export interface IWebLangData {
   item: {
-    animation?: any;
+    animation?: JSON;
     title: string;
     detail: string[];
     logo?: boolean;
