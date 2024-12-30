@@ -13,9 +13,10 @@ export interface IParams {
 
 export interface IWebLangData {
   item: {
-    animation: JSON;
+    animation?: any;
     title: string;
     detail: string[];
+    logo?: boolean;
   };
   locale?: string;
 }

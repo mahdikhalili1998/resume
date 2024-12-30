@@ -7,7 +7,7 @@ export default getRequestConfig(async () => {
   const headersObject = await headers(); // `await` اضافه شد زیرا headers نیاز دارد
   const locale = headersObject.get("X-NEXT-INTL-LOCALE");
 
-  if (!locale || !routing.locales.includes(locale as "en" | "fa")) {
+  if (!locale || !routing.locales.includes(locale as "fa" | "en")) {
     notFound();
   }
 

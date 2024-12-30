@@ -5,6 +5,6 @@ export const config = {
 };
 
 export default createMiddleware({
-  locales: ["en", "fa"], // هماهنگ با فایل routing
-  defaultLocale: "en",
+  locales: ["fa", "en"], // هماهنگ با فایل routing
+  defaultLocale: "fa",
 });
