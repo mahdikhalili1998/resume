@@ -1,12 +1,15 @@
-import { ILocale } from "@/types/props";
+import { ILocale, IWebLangData } from "@/types/props";
 import WebLang from "../module/WebLang";
-import data from "@/constant/webLangData";
+import webLangData from "@/constant/webLangData";
+import { useTranslations } from "next-intl";
 
 function WebLangGroup({ locale }: ILocale) {
+  const t = useTranslations("webLang");
+  const dataWithIntel = webLangData(t) as unknown as IWebLangData[];
   return (
     <div>
-      {data.map((item, index) => (
-        <WebLang key={index} item={item} locale={locale} />
+      {dataWithIntel.map((item: IWebLangData, index: number) => (
+        <WebLang key={index} {...item} locale={locale} />
       ))}
     </div>
   );
