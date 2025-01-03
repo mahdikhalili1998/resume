@@ -145,6 +145,23 @@
     "romises": "Promises in AJAX",
     "Queryd": "AJAX with jQuery",
     "with": "Comparison with Fetch API",
-    "Single": "Usage in Single Page Applications (SPA)"
-  }
+    "Single": "Usage in Single Page Applications (SPA)",
+    "Worke": "Service Workers",
+    "Caching": "Caching Strategies",
+    "App": "App Shell Architecture",
+    "Web": "Web App Manifest",
+    "Offlin": "Offline Functionality",
+    "Notifications": "Push Notifications",
+    "Background": "Background Sync",
+    "Performance": "Performance Optimization",
+    "Enhancement": "Progressive Enhancement",
+    "Push": "Web Push API",
+    "Security": "PWA Security Considerations",
+    "sting": "Testing and Debugging PWAs",
+    "loyment": "Deployment and Hosting of PWAs",
+    "SEO": "PWA and SEO (Search Engine Optimization)",
+    "Existin": "Integrating PWA with Existing Web Apps",
+    "title": "Skills and Expertise"
+  },
+  "exprience": { "title": "Work Experience" }
 }

@@ -25,7 +25,7 @@ export default function BioText({ locale }: ILocale) {
       </p>
 
       <button
-        className="mx-auto mt-4 flex w-max items-center justify-center gap-2 rounded-md bg-cyan-600 px-2 py-1 text-slate-300"
+        className="mx-auto mt-4 flex w-max items-center justify-center gap-2 rounded-md bg-cyan-600 px-2 py-1 font-medium text-slate-300"
         onClick={handleToggle}
       >
         {showFullText ? t("less") : t("more")}

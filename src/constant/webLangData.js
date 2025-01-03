@@ -125,6 +125,27 @@ const data = (t) => [
     ],
   },
   {
+    title: "PWA",
+    logo: true,
+    detail: [
+      t("Worke"),
+      t("Caching"),
+      t("App"),
+      t("Web"),
+      t("Offlin"),
+      t("Background"),
+      t("Notifications"),
+      t("Performance"),
+      t("Enhancement"),
+      t("Push"),
+      t("Security"),
+      t("sting"),
+      t("loyment"),
+      t("SEO"),
+      t("Existin"),
+    ],
+  },
+  {
     title: "Git",
     animation: git,
     detail: [
