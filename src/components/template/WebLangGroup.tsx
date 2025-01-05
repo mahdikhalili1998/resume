@@ -10,9 +10,9 @@ function WebLangGroup({ locale }: ILocale) {
   return (
     <div className="mt-10">
       <h1
-        className={`${locale === "fa" ? "rtl text-right font-vazirMatn" : "ltr"} flex items-center gap-2 text-xl font-medium text-slate-400`}
+        className={`${locale === "fa" ? "rtl text-right font-vazirMatn" : "ltr"} flex items-center gap-2 text-xl font-medium text-white`}
       >
-        <GiPolarStar className="text-2xl text-cyan-500" />
+        <GiPolarStar className="text-2xl text-cyan-400" />
 
         {t(`title`)}
       </h1>

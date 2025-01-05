@@ -163,5 +163,8 @@
     "Existin": "Integrating PWA with Existing Web Apps",
     "title": "Skills and Expertise"
   },
-  "exprience": { "title": "Work Experience" }
+  "exprience": {
+    "title": "Work Experience",
+    "text": "I have recently completed my training and do not have any prior work experience in this field. However, I am hopeful that I will be given an opportunity to enhance my skills and grow further"
+  }
 }
