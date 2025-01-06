@@ -22,6 +22,6 @@ export interface IWebLangData {
 
 export interface ISocial {
   name: string;
-  animation: any;
+  animation?: JSON;
   url: string;
 }
