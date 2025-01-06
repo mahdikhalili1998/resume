@@ -4,6 +4,7 @@ import Bio from "../module/Bio";
 import { ILocale } from "@/types/props";
 import WebLangGroup from "./WebLangGroup";
 import WorkExperience from "../module/WorkExperience";
+import ContactUs from "./ContactUs";
 
 function Homepage({ locale }: ILocale) {
   // const t = useTranslations("homepage");
@@ -12,6 +13,7 @@ function Homepage({ locale }: ILocale) {
       <Bio locale={JSON.parse(JSON.stringify(locale))} />
       <WebLangGroup locale={locale} />
       <WorkExperience locale={locale} />
+      <ContactUs locale={locale} />
     </div>
   );
 }

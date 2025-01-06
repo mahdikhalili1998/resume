@@ -7,6 +7,7 @@ import { GiPolarStar } from "react-icons/gi";
 function WebLangGroup({ locale }: ILocale) {
   const t = useTranslations("webLang");
   const dataWithIntel = webLangData(t) as unknown as IWebLangData[];
+  // console.log(dataWithIntel);
   return (
     <div className="mt-10">
       <h1

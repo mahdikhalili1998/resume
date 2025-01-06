@@ -19,3 +19,9 @@ export interface IWebLangData {
 
   locale?: string;
 }
+
+export interface ISocial {
+  name: string;
+  animation: any;
+  url: string;
+}
