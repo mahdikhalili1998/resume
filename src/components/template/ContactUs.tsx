@@ -3,7 +3,7 @@ import { ILocale, ISocial } from "@/types/props";
 import React, { FC } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
-import socialData from "../../constant/socialData";
+import socialData from "../../constant/SocialData";
 import { GiPolarStar } from "react-icons/gi";
 
 const ContactUs: FC<ILocale> = ({ locale }) => {
