@@ -7,7 +7,7 @@ import WorkExperience from "../module/WorkExperience";
 import ContactUs from "./ContactUs";
 
 function Homepage({ locale }: ILocale) {
-  // const t = useTranslations("homepage");
+// console.log('phone NUmber : +98xxxx06')
   return (
     <div className="my-14 px-3">
       <Bio locale={JSON.parse(JSON.stringify(locale))} />
