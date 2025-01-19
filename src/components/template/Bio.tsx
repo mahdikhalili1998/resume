@@ -46,7 +46,7 @@ export default function Bio({ locale }: ILocale) {
   };
   const t = useTranslations("bio");
   return (
-    <div className="flex flex-col">
+    <div className="ltr flex flex-col">
       <h1
         className={`${locale === "fa" ? "rtl text-right font-vazirMatn" : "ltr"} flex items-center gap-2 text-xl font-medium text-white`}
       >

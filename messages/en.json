@@ -173,6 +173,13 @@
     "git": "Github",
     "tel": "Telegram",
     "insta": "Instagram",
-    "whatsapp": "Whats App"
+    "whatsapp": "Whats App",
+    "My": "My"
+  },
+  "sampleWork": {
+    "work": "Sample Work",
+    "explianone": "The Your Music web app is designed with a mobile-first approach using Tailwind CSS. All routes have been developed by me, and I personally handled all the APIs as well. For this project, I used Next.js.",
+    "explianTwo": "In this application, registration is done via phone number and SMS using the Meli Payamak System. Additionally, NextAuth is used for authentication.",
+    "explianThree": "This application supports both English and Persian languages, and the required data is stored in MongoDB."
   }
 }

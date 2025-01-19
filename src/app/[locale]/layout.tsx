@@ -21,7 +21,9 @@ const RootLayout: React.FC<LayoutProps> = async ({ children, params }) => {
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={`bg-gray-900 antialiased`}>
+      <body
+        className={`bg-gray-900 antialiased ${locale === "fa" ? "rtl" : "ltr"}`}
+      >
         <NextIntlClientProvider messages={messages}>
           {" "}
           <Layout locale={JSON.parse(JSON.stringify(locale))}>

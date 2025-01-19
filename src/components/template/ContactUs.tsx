@@ -38,7 +38,15 @@ const ContactUs: FC<ILocale> = ({ locale }) => {
                   height: 70,
                 }}
               />
-              <span> My {item.name}</span>
+              {locale === "en" ? (
+                <span>
+                  {t("My")} {item.name}
+                </span>
+              ) : (
+                <span>
+                  {item.name} {t("My")}
+                </span>
+              )}
             </a>
           );
         })}
