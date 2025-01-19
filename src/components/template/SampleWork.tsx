@@ -72,7 +72,7 @@ function SampleWork({ locale }: ILocale) {
       <div>
         <a
           className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} text-xl font-bold text-cyan-500`}
-          href="https://resume-navy-psi-72.vercel.app/en"
+          href="https://your-music-two.vercel.app/en"
           target="_blank"
         >
           {t("linko")}
