@@ -18,7 +18,7 @@ const ContactUs: FC<ILocale> = ({ locale }) => {
         <GiPolarStar className="text-2xl text-cyan-400" />
         {t(`way`)}
       </h1>
-      <div className="mt-10 space-y-5">
+      <div className="500:grid 500:grid-cols-2 mt-10 space-y-5">
         {" "}
         {dataWithIntel.map((item: ISocial) => {
           return (

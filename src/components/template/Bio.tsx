@@ -53,7 +53,7 @@ export default function Bio({ locale }: ILocale) {
         <GiPolarStar className="text-2xl text-cyan-400" />
         {t(`title`)}
       </h1>
-      <div className="">
+      <div className="700:flex 700:justify-center">
         <SyntaxHighlighter
           language="javascript"
           style={tomorrow}

@@ -6,7 +6,7 @@ import { ILocale } from "@/types/props";
 
 function Header({ locale }: ILocale) {
   return (
-    <div className="w-full space-y-10 rounded-b-full bg-code-pattern bg-top pb-24 pt-4 shadow-2xl shadow-slate-600 ltr">
+    <div className="ltr 500:rounded-b-[70%] w-full space-y-10 rounded-b-full bg-code-pattern bg-top pb-24 pt-4 shadow-2xl shadow-slate-600">
       <LanuageBt locale={JSON.parse(JSON.stringify(locale))} />
       <span className="animate-profilePicDown flex justify-center">
         <Image

@@ -17,9 +17,11 @@ function WebLangGroup({ locale }: ILocale) {
 
         {t(`title`)}
       </h1>
-      {dataWithIntel.map((item: IWebLangData, index: number) => (
-        <WebLang key={index} {...item} locale={locale} />
-      ))}
+      <div className="600:grid 600:grid-cols-2 600:gap-y-2 600:">
+        {dataWithIntel.map((item: IWebLangData, index: number) => (
+          <WebLang key={index} {...item} locale={locale} />
+        ))}
+      </div>
     </div>
   );
 }

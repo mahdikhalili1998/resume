@@ -27,7 +27,7 @@ function SampleWork({ locale }: ILocale) {
   };
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 space-y-2">
       <h1
         className={`${locale === "fa" ? "rtl text-right font-vazirMatn" : "ltr"} mb-6 flex items-center gap-2 text-xl font-medium text-white`}
       >
@@ -36,7 +36,8 @@ function SampleWork({ locale }: ILocale) {
         {t(`work`)}
       </h1>
       <p className={`font-semibold text-slate-400`}>{t("explianone")}</p>
-      <div className="mx-auto flex w-max items-center gap-2 p-4">
+      <p className={`font-semibold text-slate-400`}>{t("explianFour")}</p>
+      <div className="mx-auto my-5 flex w-max items-center gap-2 p-4">
         {locale === "fa" ? (
           <span onClick={rightHandler}>
             <FaChevronCircleRight className="text-p-950 text-2xl text-purple-600" />
@@ -52,7 +53,7 @@ function SampleWork({ locale }: ILocale) {
           height={400}
           alt="mahdi-photo"
           priority
-          className="450:w-[14rem] h-auto w-[10rem] rounded-2xl sm:w-[16rem] md:w-[20rem]"
+          className="600:w-[12rem] 700:w-[13rem] h-auto w-[10rem] rounded-2xl"
         />
         {locale === "fa" ? (
           <span onClick={leftHandler}>
@@ -65,13 +66,18 @@ function SampleWork({ locale }: ILocale) {
         )}
       </div>
       <p className={`font-semibold text-slate-400`}>{t("explianTwo")}</p>
-      <p className={`font-semibold text-slate-400`}>{t("explianThree")}</p>
-      <a
-        className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} font-bold text-cyan-500`}
-        href="https://resume-navy-psi-72.vercel.app/en"
-      >
-        برای مشاهده اینجا کلیک کنید{" "}
-      </a>
+      <p className={`mb-10 font-semibold text-slate-400`}>
+        {t("explianThree")}
+      </p>{" "}
+      <div>
+        <a
+          className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} text-xl font-bold text-cyan-500`}
+          href="https://resume-navy-psi-72.vercel.app/en"
+          target="_blank"
+        >
+          {t("linko")}
+        </a>
+      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function WebLang({ detail, logo, animation, title, locale }: IWebLangData) {
 
   return (
     <div
-      className={`${locale === "fa" ? "rtl mr-2" : "ltr"} mt-10 flex flex-col items-start`}
+      className={`${locale === "fa" ? "rtl 500:mr-24 mr-2" : "ltr 500:ml-24 ml-2"} mt-10 flex flex-col items-start`}
     >
       <div className={`flex items-center gap-3`}>
         {animation && (
@@ -57,7 +57,7 @@ function WebLang({ detail, logo, animation, title, locale }: IWebLangData) {
             </li>
           ))}
         <button
-          className="flex w-max items-center mt-10 justify-center gap-2 rounded-md bg-cyan-600 px-2 py-1 font-medium text-slate-300"
+          className="mt-10 flex w-max items-center justify-center gap-2 rounded-md bg-cyan-600 px-2 py-1 font-medium text-slate-300"
           onClick={handleToggle}
         >
           {showFullText ? t("less") : t("more")}

@@ -10,10 +10,10 @@ const data = (t) => [
     animation: html,
     detail: [
       t("HTML5"),
-      t("Attributes"),
-      t("Semantic"),
-      t("Forms"),
       t("Multimedia"),
+      t("Forms"),
+      t("Semantic"),
+      t("Attributes"),
       t("Graphics"),
       t("Tables"),
       t("link"),
