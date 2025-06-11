@@ -17,7 +17,7 @@ function WebLangGroup({ locale }: ILocale) {
 
         {t(`title`)}
       </h1>
-      <div className="600:grid 600:grid-cols-2 600:gap-y-2 600:">
+      <div className="600:grid 600:grid-cols-2 xl:grid-cols-3 600:gap-y-2 600:justify-self-start">
         {dataWithIntel.map((item: IWebLangData, index: number) => (
           <WebLang key={index} {...item} locale={locale} />
         ))}

@@ -171,6 +171,7 @@
     "way": "Contact Information",
     "phone": "Phone",
     "git": "Github",
+    "linkedin": "LinkedIn",
     "tel": "Telegram",
     "insta": "Instagram",
     "whatsapp": "Whats App",
@@ -178,9 +179,9 @@
   },
   "sampleWork": {
     "work": "Sample Work",
-    "explianone": "The Your Music web app is designed with a mobile-first approach using Tailwind CSS. All routes have been developed by me, and I personally handled all the APIs as well. For this project, I used Next.js.",
+    "explianone": "This web app is designed for booking domestic and international tickets as well as hotel reservations. It is currently in the demo stage and uses static, fake APIs.",
     "explianTwo": "In this application, registration is done via phone number and SMS using the Meli Payamak System. Additionally, NextAuth is used for authentication.",
-    "explianThree": "This application supports both English and Persian languages, and the required data is stored in MongoDB.",
+    "explianThree": "The app is fully optimized for various browsers and devices, designed with a mobile-first approach using Tailwind CSS.",
     "linko": "Click here to view",
     "explianFour": "This application is built as a PWA and can be installed on mobile devices like a native app. It also works offline, and there are no URLs or browser icons visible at the top of the screen."
   }

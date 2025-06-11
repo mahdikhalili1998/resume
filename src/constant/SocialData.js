@@ -3,6 +3,7 @@ import Phone from "@/lottie/Phone.json";
 import Instagram from "@/lottie/Instagram.json";
 import WhatsApp from "@/lottie/WhatsApp.json";
 import github from "@/lottie/github.json";
+import linkedin from "@/lottie/linkedin.json";
 
 const socialData = (t) => [
   {
@@ -15,6 +16,12 @@ const socialData = (t) => [
 
     url: "https://github.com/mahdikhalili1998",
     animation: github,
+  },
+  {
+    name: t("linkedin"),
+
+    url: "https://www.linkedin.com/in/mahdi-khalili-22872a2a0/",
+    animation: linkedin,
   },
   {
     name: t("insta"),

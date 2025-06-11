@@ -19,11 +19,11 @@ function SampleWork({ locale }: ILocale) {
   }, [count]);
 
   const rightHandler = () => {
-    setCount((prevCount) => (prevCount === 6 ? 1 : prevCount + 1));
+    setCount((prevCount) => (prevCount === 4 ? 1 : prevCount + 1));
   };
 
   const leftHandler = () => {
-    setCount((prevCount) => (prevCount === 1 ? 6 : prevCount - 1));
+    setCount((prevCount) => (prevCount === 1 ? 4 : prevCount - 1));
   };
 
   return (
@@ -40,11 +40,11 @@ function SampleWork({ locale }: ILocale) {
       <div className="mx-auto my-5 flex w-max items-center gap-2 p-4">
         {locale === "fa" ? (
           <span onClick={rightHandler}>
-            <FaChevronCircleRight className="text-p-950 text-2xl text-purple-600" />
+            <FaChevronCircleRight className="text-p-950 text-2xl text-[#0f84fa]" />
           </span>
         ) : (
           <span onClick={leftHandler}>
-            <FaChevronCircleLeft className="text-p-950 text-2xl text-purple-600" />
+            <FaChevronCircleLeft className="text-p-950 text-2xl text-[#0f84fa]" />
           </span>
         )}
         <Image
@@ -53,15 +53,15 @@ function SampleWork({ locale }: ILocale) {
           height={400}
           alt="mahdi-photo"
           priority
-          className="600:w-[12rem] 700:w-[13rem] h-auto w-[10rem] rounded-2xl"
+          className="h-auto w-[10rem] rounded-2xl 600:w-[12rem] 700:w-[13rem]"
         />
         {locale === "fa" ? (
           <span onClick={leftHandler}>
-            <FaChevronCircleLeft className="text-p-950 text-2xl text-purple-600" />
+            <FaChevronCircleLeft className="text-p-950 text-2xl text-[#0f84fa]" />
           </span>
         ) : (
           <span onClick={rightHandler}>
-            <FaChevronCircleRight className="text-p-950 text-2xl text-purple-600" />
+            <FaChevronCircleRight className="text-p-950 text-2xl text-[#0f84fa]" />
           </span>
         )}
       </div>
@@ -72,7 +72,7 @@ function SampleWork({ locale }: ILocale) {
       <div>
         <a
           className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} text-xl font-bold text-cyan-500`}
-          href="https://your-music-two.vercel.app/en"
+          href="https://mr-blit.vercel.app/airPlane"
           target="_blank"
         >
           {t("linko")}
