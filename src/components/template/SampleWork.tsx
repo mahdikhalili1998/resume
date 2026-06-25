@@ -5,15 +5,14 @@ import { GiPolarStar } from "react-icons/gi";
 import { useTranslations } from "next-intl";
 import { FaChevronCircleRight } from "react-icons/fa";
 import { FaChevronCircleLeft } from "react-icons/fa";
-import Image from "next/image";
 
 function SampleWork({ locale }: ILocale) {
   const [count, setCount] = useState<number>(1);
   const t = useTranslations("sampleWork");
-
+  console.log(count);
   useEffect(() => {
     const interval = setTimeout(() => {
-      setCount((prevCount) => (prevCount === 6 ? 1 : prevCount + 1));
+      setCount((prevCount) => (prevCount === 4 ? 1 : prevCount + 1));
     }, 3000);
     return () => clearTimeout(interval);
   }, [count]);
@@ -47,12 +46,12 @@ function SampleWork({ locale }: ILocale) {
             <FaChevronCircleLeft className="text-p-950 text-2xl text-[#0f84fa]" />
           </span>
         )}
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={`/your-music/${count}.jpg`}
           width={400}
           height={400}
           alt="mahdi-photo"
-          priority
           className="h-auto w-[10rem] rounded-2xl 600:w-[12rem] 700:w-[13rem]"
         />
         {locale === "fa" ? (

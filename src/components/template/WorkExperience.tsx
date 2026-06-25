@@ -5,6 +5,7 @@ import { GiPolarStar } from "react-icons/gi";
 
 function WorkExperience({ locale }: ILocale) {
   const t = useTranslations("exprience");
+  const z = useTranslations("sampleWork");
 
   return (
     <div className={`${locale === "fa" ? "rtl" : "ltr"} mt-10`}>
@@ -17,6 +18,13 @@ function WorkExperience({ locale }: ILocale) {
         {t(`title`)}
       </h1>
       <p className="font-semibold text-slate-400">{t("text")}</p>
+      <a
+        className={`${locale === "fa" ? "font-vazirMatn" : "font-sans"} text-xl font-bold text-cyan-500`}
+        href="https://garmeja.com/"
+        target="_blank"
+      >
+        {z("linko")}
+      </a>
     </div>
   );
 }
